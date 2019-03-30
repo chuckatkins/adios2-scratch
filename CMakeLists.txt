@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(adios2_scratch C)
+project(adios2_scratch C CXX Fortran)
 
 #------------------------------------------------------------------------------#
 # Some boilerplate to setup nice output directories
@@ -19,4 +19,5 @@ if(NOT CMAKE_RUNTIME_OUTPUT_DIRECTORY)
     ${PROJECT_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
 endif()
 
-add_subdirectory(erdc)
+#add_subdirectory(erdc)
+add_subdirectory(benchmarks)
